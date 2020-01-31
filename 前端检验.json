@@ -1,0 +1,1741 @@
+{
+    "version": 6,
+    "entities": [
+        {
+            "entity": {
+                "type": "Project",
+                "id": "6fed5fb4-2537-4307-9594-abe58ba92af9",
+                "name": "mmall"
+            },
+            "children": [
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "006c87bd-5ca8-4ceb-aa16-e87f2232832a",
+                        "name": "cart"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "28"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "count",
+                                                "value": "0"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/add.do"
+                                },
+                                "id": "2cb6df16-b0cf-497a-b399-3f547adb5b57",
+                                "name": "add.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productIds",
+                                                "value": "26"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/delete_product.do"
+                                },
+                                "id": "f71b3c77-9251-44f9-bb50-a42710d2d623",
+                                "name": "delete_product.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/get_cart_product_count.do"
+                                },
+                                "id": "30e2f065-2e14-4d6e-a630-49bfc31a380e",
+                                "name": "get_cart_product_count.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/list.do"
+                                },
+                                "id": "f10eaf63-1c47-409d-b23f-f09b4781f984",
+                                "name": "list.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/select.do"
+                                },
+                                "id": "34aec1cd-73b4-4b9d-ad7e-3213c7e2d4f7",
+                                "name": "select.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/select_all.do"
+                                },
+                                "id": "364546f2-5585-4e8a-b2f6-28ab4018eaa1",
+                                "name": "select_all.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "28"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/un_select.do"
+                                },
+                                "id": "2f5f9fe9-9f2c-4ce9-b656-00139840791e",
+                                "name": "un_select.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/unselect_all.do"
+                                },
+                                "id": "157bb501-75be-436a-ad0d-13c0d48e96b8",
+                                "name": "unselect_all.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "26"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "count",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/cart/update.do"
+                                },
+                                "id": "f9e013a9-1bd8-477c-a51a-4e2ac0553fde",
+                                "name": "update.do",
+                                "headers": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "a3b083c5-8749-4a81-b051-8e0142d9c6fb",
+                        "name": "manage.category"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/category/add_category.do"
+                                },
+                                "id": "f598e426-7626-4997-bc67-ae52103320b3",
+                                "name": "add_category.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/category/get_category.do"
+                                },
+                                "id": "25a2d2ab-1054-44b3-8283-59036f3f7d5e",
+                                "name": "get_category.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "categoryId",
+                                                "value": "100001"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/category/get_deep_category.do"
+                                },
+                                "id": "fb27b969-c39d-4fd3-93aa-14c6f4db6f17",
+                                "name": "get_deep_category.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/category/set_category_name.do"
+                                },
+                                "id": "17b9cfec-e2fe-4e99-acd4-3714c5af0513",
+                                "name": "set_category_name.do",
+                                "headers": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "d5f8cd13-6a3d-411e-8128-36ae15060d0e",
+                        "name": "manage.product"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "27"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/product/detail.do"
+                                },
+                                "id": "ae56309c-430f-40f4-abd0-1c90e05d51a1",
+                                "name": "detail.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/product/list.do"
+                                },
+                                "id": "26731bd5-f9f0-4dcd-9907-0cc0ba298997",
+                                "name": "list.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "categoryId",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "name",
+                                                "value": "三"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "subtitle",
+                                                "value": "三星大促销"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "mainImage",
+                                                "value": "sss.jpg"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "subImages",
+                                                "value": "test.jpg"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "detail",
+                                                "value": "detailtext"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "price",
+                                                "value": "1000"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "stock",
+                                                "value": "100"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "status",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "id",
+                                                "value": "26"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/product/save.do"
+                                },
+                                "id": "262ba1f1-23c9-4ee7-8815-949018add59a",
+                                "name": "save.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "27"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/product/search.do"
+                                },
+                                "id": "b3ef6ee3-1854-45cb-a558-80571ac2aeef",
+                                "name": "search.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "27"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "status",
+                                                "value": "2"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/product/set_sale_status.do"
+                                },
+                                "id": "7e30dd3b-1487-4eaf-9aed-0cb5b7ea608e",
+                                "name": "set_sale_status.do",
+                                "headers": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "c97d5baf-7b22-42c4-a4dc-2841df8e1870",
+                        "name": "manage.user"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "username",
+                                                "value": "jivan"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "password",
+                                                "value": "123"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/manage/user/login.do"
+                                },
+                                "id": "48b6727e-36e8-42e4-8912-a5175347ab3a",
+                                "name": "login.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "cdbeefc3-d6ec-49ec-8b18-8ac0d2a18e39",
+                        "name": "product"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "productId",
+                                                "value": "28"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/product/detail.do"
+                                },
+                                "id": "f8d8738e-0e92-4e71-9f0c-480e81260528",
+                                "name": "detail.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "keyword",
+                                                "value": "i"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "orderBy",
+                                                "value": "price_desc"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/product/list.do"
+                                },
+                                "id": "6904803a-7c6f-4dc5-a976-0d7b028ee6ea",
+                                "name": "list.do",
+                                "headers": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Service",
+                        "id": "5e84db90-6395-44e0-9f9e-2fe0c2b4d7bf",
+                        "name": "shipping"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "userId",
+                                                "value": "23"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverName",
+                                                "value": "test"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverPhone",
+                                                "value": "010"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverMobile",
+                                                "value": "18688888888"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverProvince",
+                                                "value": "北京"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverCity",
+                                                "value": "北京市"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverAddress",
+                                                "value": "中关村"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverZip",
+                                                "value": "100000"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/shipping/add.do"
+                                },
+                                "id": "1de42161-334a-41d8-8905-7059b979523a",
+                                "name": "add.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "shippingId",
+                                                "value": "11"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/shipping/del.do"
+                                },
+                                "id": "a56fe21c-cfff-465b-9b97-e1a7d68e17f0",
+                                "name": "del.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "list.do",
+                                                "value": ""
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/shipping/select.do"
+                                },
+                                "id": "1a9c506d-8543-4ccf-bfe9-c7d9143f2992",
+                                "name": "list.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "shippingId",
+                                                "value": "31"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/shipping/select.do"
+                                },
+                                "id": "f89715e0-ff11-42d9-8154-e6f6f51d0c67",
+                                "name": "select.do",
+                                "headers": []
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.1",
+                                    "name": "GET"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Text"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "name": "id",
+                                                "value": "31"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverName",
+                                                "value": "test22"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverPhone",
+                                                "value": "010"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverMobile",
+                                                "value": "18688888888"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverProvince",
+                                                "value": "北京"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverCity",
+                                                "value": "北京市"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverAddress",
+                                                "value": "中关村"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "name": "receiverZip",
+                                                "value": "100000"
+                                            }
+                                        ]
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/shipping/update.do"
+                                },
+                                "id": "1d1c18ee-5cf6-467f-8cbe-6664f354a35f",
+                                "name": "update.do",
+                                "headers": []
+                            }
+                        }
+                    ]
+                },
+                {
+                    "entity": {
+                        "type": "Scenario",
+                        "id": "38db49e4-6a64-4ad2-af24-c4579576b065",
+                        "name": "user"
+                    },
+                    "children": [
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/get_user_info.do"
+                                },
+                                "id": "28c7d7e3-bf0b-4317-9ce1-1b479f77e67c",
+                                "name": "get_user_info.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "username",
+                                                "value": "test"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "password",
+                                                "value": "123"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/login.do"
+                                },
+                                "id": "86e8d71d-cb6c-40b9-a9ee-886826811e46",
+                                "name": "login.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "username",
+                                                "value": "jivan"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/forget_get_question.do"
+                                },
+                                "id": "0f33725d-0101-4ed4-96e3-4a5aa282a293",
+                                "name": "forget_get_question.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "username",
+                                                "value": "jivan"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "question",
+                                                "value": "问题"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "answer",
+                                                "value": "答案1"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/forget_check_answer.do"
+                                },
+                                "id": "2f4622ae-5f50-4c51-9a8e-d62d05736d74",
+                                "name": "forget_check_answer.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "username",
+                                                "value": "jivan"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "passwordNew",
+                                                "value": "1234"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "forgetToken",
+                                                "value": "caa4ea2b-7e7a-4055-b64b-a962f3898a7"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/forget_reset_password.do"
+                                },
+                                "id": "5abca101-2827-4361-ab4c-1a50c8af0900",
+                                "name": "forget_reset_password.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "passwordOld",
+                                                "value": "456"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "passwordNew",
+                                                "value": "123"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/reset_password.do"
+                                },
+                                "id": "9a18241f-fcd0-4e8b-8edc-7456dc154782",
+                                "name": "reset_password.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "email",
+                                                "value": "tset@qq.com"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "phone",
+                                                "value": "123456"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "question",
+                                                "value": "问题"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "answer",
+                                                "value": "答案"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/update_information.do"
+                                },
+                                "id": "46780ca0-49ee-4c3f-bcef-31495880b7c1",
+                                "name": "update_information.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/logout.do"
+                                },
+                                "id": "85c4f244-6188-453d-b4a2-5007542dac22",
+                                "name": "logout.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": []
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/get_information.do"
+                                },
+                                "id": "350311e4-4f9d-4aa8-891e-bde1a62c3403",
+                                "name": "get_information.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "str",
+                                                "value": "tset@qq.com"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "type",
+                                                "value": "email"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/check_valid.do"
+                                },
+                                "id": "0ea560e3-a12f-4048-9d79-330d6b57c706",
+                                "name": "check_valid.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "entity": {
+                                "type": "Request",
+                                "method": {
+                                    "requestBody": true,
+                                    "link": "http://tools.ietf.org/html/rfc7231#section-4.3.3",
+                                    "name": "POST"
+                                },
+                                "body": {
+                                    "formBody": {
+                                        "overrideContentType": true,
+                                        "encoding": "application/x-www-form-urlencoded",
+                                        "items": [
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "username",
+                                                "value": "test"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "password",
+                                                "value": "123"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "email",
+                                                "value": "tset@qq.com"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "phone",
+                                                "value": "15517884870"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "question",
+                                                "value": "问题"
+                                            },
+                                            {
+                                                "enabled": true,
+                                                "type": "Text",
+                                                "name": "answer",
+                                                "value": "答案"
+                                            }
+                                        ]
+                                    },
+                                    "bodyType": "Form"
+                                },
+                                "uri": {
+                                    "query": {
+                                        "delimiter": "&",
+                                        "items": []
+                                    },
+                                    "scheme": {
+                                        "name": "http",
+                                        "version": "V11"
+                                    },
+                                    "host": "localhost:8088",
+                                    "path": "/user/register.do"
+                                },
+                                "id": "6f5b943e-2c8a-4c28-b5c0-3cf50fffe969",
+                                "name": "register.do",
+                                "headers": [
+                                    {
+                                        "enabled": true,
+                                        "name": "Content-Type",
+                                        "value": "application/x-www-form-urlencoded"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
